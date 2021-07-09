@@ -1,0 +1,10 @@
+{
+    "type": "origins:model_color",
+    "red": 1.0,
+    "green": 1.0,
+    "blue": 1.99,
+    "alpha": 0.7,
+    "name": "Translucent",
+    "description": "your body has evolved and is now translucent." 
+
+}

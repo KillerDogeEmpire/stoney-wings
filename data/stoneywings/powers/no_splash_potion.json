@@ -1,0 +1,12 @@
+
+{
+    "type":"origins:prevent_item_use",
+    "name": "No Splash Potions",
+    "description": "You have lived in caves for too long you don't know how to use potions",
+    "item_condition":{
+       "type":"origins:ingredient",
+       "ingredient":{
+          "item":"minecraft:splash_potion"
+       }
+    }
+ }

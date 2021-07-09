@@ -1,0 +1,16 @@
+{
+   "type":"origins:fire_projectile",
+   "cooldown":250,
+   "hud_render":{
+      "bar_index":7
+   },
+   "entity_type":"minecraft:wither_skull",
+   "sound":"minecraft:entity.wither.shoot",
+   "speed":4,
+   "count":1,
+   "divergence":5,
+   "key":"primary",
+   "hidden":false,
+   "name":"Block Throw",
+   "description":"You Can Throw Blocks. (Don't know how to do that so wither skulls will do)."
+}

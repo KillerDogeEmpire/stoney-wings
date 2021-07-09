@@ -1,0 +1,20 @@
+{
+    "type":"origins:fire_projectile",
+    "cooldown":1050,
+      "hud_render":
+      {
+          "should_render": true,
+          "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+          "bar_index": 23
+   
+    },
+    "entity_type":"minecraft:arrow",
+    "sound":"minecraft:entity.bat.takeoff",
+    "speed":3,
+    "count":9,
+    "divergence":30,
+    "key":"primary",
+    "hidden":false,
+    "name":"Feather Barrage",
+    "description":"You can release a burst of arrow-shaped feathers from your wings."
+ }

@@ -1,0 +1,18 @@
+{
+    "modifier": {
+      "attribute": "minecraft:generic.max_health",
+      "value": 4,
+      "operation": "addition"
+ 
+    },
+    "type": "origins:attribute",
+            "name": "Heart of stone",
+         "description": "You Have 2 Extra Hearts"
+  }
+
+
+
+
+
+
+	

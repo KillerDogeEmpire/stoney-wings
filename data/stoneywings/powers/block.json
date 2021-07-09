@@ -1,0 +1,19 @@
+{
+    "loading_priority": 100,
+    "type": "origins:fire_projectile",
+    "cooldown": 5,
+    "hud_render": {
+        "should_render": false
+    },
+    "name": "Throw Stone",
+    "description": "You Can Throw Blocks",
+    "entity_type": "minecraft:falling_block",
+    "sound": "minecraft:block.stone.place",
+    "tag": "{BlockState:{Name:\"minecraft:stone\"}, Time:1}",
+    "speed": 1.5,
+    "divergence": 0,
+    "key": {
+        "key": "key.origins.secondary_active",
+        "continuous": false
+    }
+}

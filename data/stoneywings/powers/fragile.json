@@ -1,0 +1,18 @@
+{
+    "modifier": {
+      "attribute": "minecraft:generic.max_health",
+      "value": -4,
+      "operation": "addition"
+ 
+    },
+    "type": "origins:attribute",
+            "name": "Avian at heart",
+         "description": "You are more fragile than most origins. You have 8 hearts instead of 10."
+  }
+
+
+
+
+
+
+	

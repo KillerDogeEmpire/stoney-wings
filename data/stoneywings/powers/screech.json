@@ -1,0 +1,54 @@
+{
+    "type": "origins:active_self",
+    "name": "Nightmare Screech",
+    "description": "You have inherited the high pitch screech of your species, which damages, gives nausea, slows down, and weakens anything around you in a 10 block radius when you are attacked. However, this hurts your vocal cords, hence why you need some time in order to screech again.",
+    "hidden": false,
+    "cooldown": 4500,
+    "entity_action":
+    {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "effect give @e[distance=0.1..10] minecraft:slowness 10"
+            },
+            {
+        "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "effect give @e[distance=0.1..10] minecraft:weakness 10"
+            },
+            {
+        "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "effect give @e[distance=0.1..10] minecraft:nausea 10"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "particle minecraft:enchanting_table_particle ~ ~ ~ 0 0 0 0 1 normal"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "particle minecraft:enchanting_table_particle 5 5 5 .7 ~ ~1 ~ 1 1 1 1 25 normal"
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "entity.parrot.imitate.wither",
+                "volume": 10,
+                "pitch": 2
+            }
+        ]
+    },
+    "hud_render":
+    {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+        "bar_index": 22
+    },
+    "key": {
+        "key": "key.origins.secondary_active"
+        }
+
+    }

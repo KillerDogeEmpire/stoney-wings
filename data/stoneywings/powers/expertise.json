@@ -1,0 +1,27 @@
+{
+    "type": "origins:multiple",
+    "name": "Hunting skills",
+    "description": "You are far more skilled with ranged weapons. However, your skills with hand-to-hand combat are weaker than most origins.",
+    "hidden": false,
+    "o_0": {
+        "type": "origins:attribute",
+        "name": "Unstable wings",
+        "modifier": {
+            "operation": "multiply_base",
+            "value": -0.0,
+            "attribute": "minecraft:generic.attackdamage"
+        },
+        "hidden": true,
+        "description": "Your wings are too weak to properly use melee weapons, therefore you deal less damage with them."
+    },
+    "o1": {
+        "type": "origins:modify_projectile_damage",
+        "modifier": {
+            "operation": "multiply_base",
+            "value": 2
+        },
+        "hidden": true,
+        "description": "Your ranged weapons deal double damage to your targets.",
+        "name": "Archery proficiency"
+    }
+}

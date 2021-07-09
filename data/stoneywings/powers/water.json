@@ -1,0 +1,23 @@
+{
+	"type": "origins:multiple",
+	"name": "Heavy As A Rock",
+	"description": "You are so heavy, that you are slower than an average human. you also sink in water.",
+
+	"dense": {
+		"type": "origins:ignore_water"
+	},
+	"no_lungs": {
+		"type": "origins:stacking_status_effect",
+		"min_stacks": -20,
+		"max_stacks": 2,
+		"duration_per_stack": 10,
+		"effects": [{
+			"effect": "minecraft:water_breathing",
+			"is_ambient": true,
+			"amplifier": 0,
+			"show_particles": false,
+			"show_icon": false,
+			"duration": 100
+		}]
+	}
+}

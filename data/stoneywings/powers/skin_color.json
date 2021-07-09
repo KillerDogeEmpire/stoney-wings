@@ -1,0 +1,10 @@
+{
+    "type": "origins:model_color",
+    "name": "Black feathers",
+    "description": "Your skin is darker in color.",
+    "red": 0.3, 
+    "green": 0.3, 
+    "blue": 0.3, 
+    "alpha": 1,
+    "hidden":"false"
+  }

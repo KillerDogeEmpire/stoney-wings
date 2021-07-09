@@ -1,0 +1,13 @@
+{
+    "type": "origins:prevent_sleep",
+    "message": "You dont like to sleep aboveground due to how unfamiliar it is You can only sleep below Y = 35.",
+    "set_spawn_point": true,
+    "block_condition": {
+        "type": "origins:height",
+        "inverted": false,
+        "comparison": ">",
+        "compare_to": 35
+    },
+    "name": "Underground Lifestyle",
+    "description": "Because you have lived for so long underground, you are unable to sleep above the surface. You can only sleep below Y = 35."
+}

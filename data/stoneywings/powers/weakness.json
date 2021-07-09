@@ -1,0 +1,21 @@
+{
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 1,
+    "max_stacks": 2,
+    "duration_per_stack": 20,
+    "effect": {
+        "effect": "minecraft:weakness",
+        "amplifier": 0,
+    
+    "name": "Weakness",
+    "description": "You always have blindness and weakness in the sun"
+
+        
+    
+    },
+   "condition": {
+    "type": "origins:exposed_to_sun"
+},
+    "interval": 20,
+    "hidden": true
+}

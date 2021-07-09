@@ -1,0 +1,12 @@
+{
+    "type":"origins:prevent_item_use",
+    "name": "No Shield",
+    "description": "You have lived in caves for too long you don't know how to use shields",
+    "item_condition":{
+       "type":"origins:ingredient",
+
+       "ingredient":{
+          "item":"minecraft:shield"
+       }
+    }
+ }

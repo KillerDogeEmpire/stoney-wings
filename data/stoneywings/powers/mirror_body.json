@@ -1,0 +1,92 @@
+{
+    "name":"Mirror Body",
+    "description": "You Have A Shield",
+    "type": "origins:multiple",
+    "immmunity": {
+        "condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "stoneywings:mirror_body_cooldown",
+                    "comparison": "==",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "stoneywings:mirror_body_on",
+                    "comparison": "!=",
+                    "compare_to": 0
+                }
+            ]
+        },
+        "type": "origins:modify_damage_taken",
+        "self_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:resource",
+                "resource": "stoneywings:mirror_body_cooldown",
+                "comparison": "==",
+                "compare_to": 0
+            },
+            "if_action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:trigger_cooldown",
+                        "power": "stoneywings:mirror_body_cooldown"
+                    },
+                    {
+                        "type": "origins:trigger_cooldown",
+                        "power": "stoneywings:mirror_body_on"
+                    }
+                   
+                ]
+            }
+        },
+        "modifier": {
+            "name": "Arrow Immunity",
+            "operation": "multiply_total",
+            "value": -1.0
+        },
+        "damage_condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:name",
+                    "name": "arrow"
+                },
+                {
+                    "type": "origins:name",
+                    "name": "thrown"
+                },
+                {
+                    "type": "origins:name",
+                    "name": "trident"
+                },
+                {
+                    "type": "origins:name",
+                    "name": "witherSkull"
+                }
+            ]
+        }
+    },
+    "cooldown": {
+        "type": "origins:cooldown",
+        "cooldown": 1500,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+            "bar_index": 0
+        }
+    },
+    "on": {
+        "type": "origins:cooldown",
+        "cooldown": 600,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+            "bar_index": 19
+        }
+    }
+}
