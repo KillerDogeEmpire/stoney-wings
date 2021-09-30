@@ -2,7 +2,6 @@
     "type": "origins:multiple",
     "name": "Hunting skills",
     "description": "You are far more skilled with ranged weapons. However, your skills with hand-to-hand combat are weaker than most origins.",
-    "hidden": false,
     "o_0": {
         "type": "origins:attribute",
         "name": "Unstable wings",
@@ -20,8 +19,6 @@
             "operation": "multiply_base",
             "value": 2
         },
-        "hidden": true,
-        "description": "Your ranged weapons deal double damage to your targets.",
         "name": "Archery proficiency"
     }
 }
